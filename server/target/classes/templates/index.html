@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml" lang="en"
+       xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>NaoCloud Application</title>
+    <link rel="shortcut icon" type="image/png" th:href="@{/images/roboto-logo.png}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body background="/images/19.png"
+      style="background-position: center;
+      background-repeat: repeat;
+      background-size: cover;">
+
+<h1>Multimodal interaction with Nao robot using web interface.</h1>
+
+<div class="container">
+    <img th:src="@{/images/index.png}" class="img-responsive center-block" width="172" height="295" alt="Logo"  title="Hello, world! I am Nao robot!" />
+    <h2>Before start interaction with Nao Robot log in to an existing account or create an account.</h2>
+
+    <div class="col-xs-6">
+        <form th:action="@{/registration}" method="get">
+            <button class="btn btn-md btn-warning btn-block" style="font-size: 18px; padding: 10px 0 10px 0" type="Submit">Registration</button>
+        </form>
+    </div>
+    <div class="col-xs-6">
+        <form th:action="@{/login}" method="get">
+            <button class="btn btn-md btn-warning btn-block" style="font-size: 18px; padding: 10px 0 10px 0" type="Submit">Login</button>
+        </form>
+    </div>
+
+</div>
+
+
+<footer>
+    <span class="content left">
+        <a style="text-decoration:none" href="https://www.tuke.sk/">
+            <i>TUKE </i>
+        </a>
+
+        <a style="text-decoration:none" href="http://www.fei.tuke.sk/sk">
+            <i>FEI </i>
+        </a>
+
+        <a style="text-decoration:none" href="http://kemt.fei.tuke.sk/">
+            <i>KEMT </i>
+        </a>
+    </span>
+
+    <span class="content right">Copyright &copy; 2018 - 2021</span>
+</footer>
+</body>
+</html>

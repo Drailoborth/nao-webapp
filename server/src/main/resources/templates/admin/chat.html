@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>NaoCloud</title>
+    <link rel="shortcut icon" type="image/png" th:href="@{/images/roboto-logo.png}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="/images/roboto-logo.png"/>
+    <link rel="stylesheet" href="/css/chat.css" />
+</head>
+<body background="/images/19.png"
+    style="background-repeat: repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;">
+<noscript>
+    <h2>Sorry! Your browser doesn't support Javascript</h2>
+</noscript>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" th:href="@{admin/home}">NaoCloud</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a th:href="@{admin/home}">Home</a></li>
+                <li class="active" ><a th:href="@{/chat}">Chat</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+            </ul>
+        </div>
+        <!--Logout button-->
+        <form th:action="@{/logout}" method="get">
+            <button class="btn btn-md btn-danger btn-block" name="logout"
+                    type="Submit">Logout
+            </button>
+        </form>
+    </div>
+</nav>
+
+<div id="chat-page" class="hidden">
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>NaoCloud Global Chat Box</h2>
+        </div>
+        <div class="connecting">Connecting...</div>
+        <ul id="messageArea">
+
+        </ul>
+        <form id="messageForm" name="messageForm">
+            <div class="form-group">
+                <div class="input-group clearfix">
+                    <label for="message"></label>
+                    <input type="text" id="message" placeholder="Type a message..." maxlength="255" onkeyup="count_down(this)"
+                           autocomplete="off" class="form-control"/>
+
+                    <button type="submit" class="primary">Send</button>
+
+                    <span id="count" style="float: right; font-size:20px; font-weight:600; margin-top:-5px; ">255</span><br>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/main.js"></script>
+
+<div id="back-top">
+    <a href="#navbar">
+        <i class="glyphicon glyphicon-chevron-up"></i>
+    </a>
+</div>
+
+<footer>
+    <span class="content left">
+        <a style="text-decoration:none" href="https://www.tuke.sk/">
+            <i>TUKE </i>
+        </a>
+
+        <a style="text-decoration:none" href="http://www.fei.tuke.sk/sk">
+            <i>FEI </i>
+        </a>
+
+        <a style="text-decoration:none" href="http://kemt.fei.tuke.sk/">
+            <i>KEMT </i>
+        </a>
+    </span>
+
+    <span class="content right">Copyright &copy; 2018 - 2021</span>
+</footer>
+</body>
+</html>

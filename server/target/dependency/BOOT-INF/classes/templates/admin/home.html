@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>NaoCloud | Management</title>
+    <link rel="shortcut icon" type="image/png" th:href="@{/images/roboto-logo.png}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home.css}"/>
+    <LINK rel="stylesheet" type="text/css" th:href="@{/css/homeCustomEdit.css}"/>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/js/homeExtended.js"></script>
+    <script src="/js/homeSpeechRecognition.js"></script>
+
+</head>
+
+<body background="/images/18.jpg"
+      style="background-position: center; background-repeat: no-repeat; background-size: cover;">
+<noscript>
+    <h2>Sorry! Your browser doesn't support Javascript</h2>
+</noscript>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" th:href="@{/admin/home}">NaoCloud</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a id="btnHome" th:href="@{/admin/home}">Home</a></li>
+            <li><a th:href="@{/chat}">Chat</a></li>
+            <li><a th:href="@{/about}">About</a></li>
+        </ul>
+        <!--Logout button-->
+        <form th:action="@{/logout}" method="get">
+            <button class="btn btn-md btn-danger btn-block" name="logout"
+                    type="Submit">Logout
+            </button>
+        </form>
+    </div>
+</nav>
+<div class="container">
+
+    <!--Container holding all sub element-->
+    <div class="panel-group" style="margin-top:40px">
+
+        <h3><span class="badge badge-secondary" th:utext="${userName}">username displayed here</span></h3>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <span>Info panel</span>
+            </div>
+            <div class="panel-body">
+
+                <div class="delAndIPInfo" th:unless="${selected} == null">
+                    <span id="clearListButton">
+                        <a th:href="@{/admin/home/clear}" onclick="return confirm('Are you sure you want to erase whole record of connection list except the last one?') && reloadPageAndConnect();">
+                            <button class="MyButton2">Clear listed connections</button></a>
+                    </span>
+                    <span class="IPInfo">
+                        <p class="h4">Connected to: <span class= "IpAndPortHighlight" th:text="${selected.IP}"></span><strong>:</strong><span class="IpAndPortHighlight" th:text="${selected.Port}"></span></p>
+                    </span>
+                </div>
+
+                <form action="#" th:action="@{/admin/home/selectInstance}" th:object="${session}" method="post">
+
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <div>
+                                    <label th:text="${err}">Error occurred while selecting instance</label>
+                                    <select id="SelectList" class="blue-color" th:field="*{activeIP}">
+                                        <option th:each="iterator : ${allInstances}"
+                                                th:value="${iterator}"
+                                                th:text="${iterator}">0.0.0.0
+                                        </option>
+                                    </select>
+                                    <button id="connectButton" class="MyButton" type="submit" name="submit">Connect</button>
+                                    <button class="MyButton" onclick="setLastOption()" name="submit">Connect to the latest</button>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div  th:unless="${selected} == null">
+                                    <table align="right">
+                                        <tr><p class="h5">Device name: <span th:text="${selected.InstanceName}">MyNao19</span></p></tr>
+                                        <tr><p class="h5">Session started at: <span th:text="${selected.time}">1/1/2019</span></p></tr>
+                                        <tr>
+                                            <p class="h5">Battery level:
+                                                <span th:switch="${selected.battery}">
+                                            <img th:case="'25'" th:src="@{/images/bat/bat25.png}"/>
+                                            <img th:case="'50'" th:src="@{/images/bat/bat50.png}"/>
+                                            <img th:case="'75'" th:src="@{/images/bat/bat75.png}"/>
+                                            <img th:case="'100'" th:src="@{/images/bat/bat100.png}"/>
+                                        </span></p>
+                                        </tr>
+                                        <tr><p hidden class="h5">Device IP: <span id= "IpAdd" th:text="${selected.IP}"></span> and port is: <span id = "PortNum" th:text="${selected.Port}"></span></p></tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                            <div style="overflow-x: auto;">
+                                <p>
+                                    <input class="MyButton3" type="button" value="Delete all" onclick="deleteAllRows('tblConnections')">
+                                    <input class="MyButton4" type="button" value="Add new record" onclick="addNewConnection('tblConnections')">
+                                </p>
+                                <table class="connections" ><tbody id="tblConnections" ><tr class="connRows" hidden>
+                                    <td style="max-width:400px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"contenteditable></td>
+                                    <td class="delCell"><input type="button" value="Delete" onclick="deleteOneRow(this, 'tblConnections')"></td>
+                                    <td class="connCell"><input type="button" value="Connect" onclick="connectRow(this)"></td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            </div>
+
+            </div>
+        </div>
+
+        <!--management console panel + admin message-->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <span>Management console</span>
+            </div>
+            <div class="panel-body">
+                <table class="table">
+                    <tr>
+                        <td style="vertical-align:middle">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select id="commandSelList" class="blue-color" th:field="*{command}">
+                                    <option th:each="i : ${allCommands}" th:value="${i}" th:text="${i}">
+                                    </option>
+                                </select>
+
+                                <input id="myInput1" type="text" th:field="*{arg}" />
+                                <button id="mainControlButton" class="MyButton" type="submit" name="submit" >Execute</button>
+                            </form>
+                        </td>
+                        <td>
+                            <a id="aRecBtn" href="#" onclick="startRecord(); return false">
+                                <img id="recButton" th:src="@{/images/commandpic/mic.png}">
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option th:value="${CommandSAY}" th:text="${CommandSAY}">
+                                    </option>
+                                </select>
+                                <div class="focusedLabel">
+                                    <input id="myInput2" type="text" th:field="*{arg}" autofocus/>
+                                    <button id="controlButton" class="MyButton" type="submit" name="submit" >Say</button>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- other Buttons -->
+                <div class="MyGrid" style="position:relative">
+                    <span class="horizontal">
+                        <!--                            1-->
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandTURNLEFT}" th:text="${CommandTURNLEFT}">
+                                    </option>
+                                </select>
+
+                                <input id="buttonTurnLeft" class="MyInput" type="image" th:src="@{/images/commandpic/turnleft.jpg}" alt="Submit">
+                            </form>
+                        </span>
+                        <!--                            2-->
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandFORWARD}" th:text="${CommandFORWARD}">
+                                    </option>
+                                </select>
+
+                                <input id="buttonForward" class="MyInput" type="image" th:src="@{/images/commandpic/forward.png}" alt="Submit" >
+                            </form>
+                        </span>
+                        <!--                            3-->
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandTURNRIGHT}" th:text="${CommandTURNRIGHT}">
+                                    </option>
+                                </select>
+
+                                <input id="buttonTurnRight" class="MyInput" type="image" th:src="@{/images/commandpic/turnright.png}" alt="Submit" >
+                            </form>
+                        </span>
+
+                        <span class="vertical">
+                            <img class="MyInput" th:src="@{/images/commandpic/emptyTile.png}" alt="emptySpace">
+                        </span>
+
+                        <span class="vertical">
+                            <input class="MyInput" onclick="getBattery()" type="image" th:src="@{/images/commandpic/battery1.png}" alt="Submit" >
+                        </span>
+
+                        <span class="vertical">
+                            <input class="MyInput" onclick="standUp()" type="image" th:src="@{/images/commandpic/standUp.png}" alt="Submit" >
+                        </span>
+
+                        <span class="vertical">
+                            <input class="MyInput" onclick="sitDown()" type="image" th:src="@{/images/commandpic/sitDown.png}" alt="Submit" >
+                        </span>
+
+
+                    </span>
+                    <span class="horizontal">
+                        <!--                            4-->
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandLEFT}" th:text="${CommandLEFT}">
+                                    </option>
+                                </select>
+
+                                <input class="MyInput" type="image" th:src="@{/images/commandpic/forward.png}" style="transform: rotate(270deg)" alt="Submit" >
+                            </form>
+                        </span>
+                        <!--                            5-->
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandSTOP}" th:text="${CommandSTOP}">
+                                    </option>
+                                </select>
+
+                                <input id="buttonStop" class="MyInput" type="image" th:src="@{/images/commandpic/stop.png}" alt="Submit" >
+                            </form>
+                        </span>
+                        <!--                            6-->
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandRIGHT}" th:text="${CommandRIGHT}">
+                                    </option>
+                                </select>
+
+                                <input class="MyInput" type="image" th:src="@{/images/commandpic/forward.png}" style="transform: rotate(90deg)" alt="Submit" >
+                            </form>
+                        </span>
+
+                        <span class="vertical">
+                            <img class="MyInput" th:src="@{/images/commandpic/emptyTile.png}" alt="emptySpace">
+                        </span>
+
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandLARMUP}" th:text="${CommandLARMUP}">
+                                    </option>
+                                </select>
+
+                                <input class="MyInput" type="image" th:src="@{/images/commandpic/lefthandup.png}" alt="leftArmUp" >
+                            </form>
+                        </span>
+
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandRARMUP}" th:text="${CommandRARMUP}">
+                                    </option>
+                                </select>
+
+                                <input class="MyInput" type="image" th:src="@{/images/commandpic/righthandup.png}" alt="rightArmUp" >
+                            </form>
+                        </span>
+
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandLARMOPEN}" th:text="${CommandLARMOPEN}">
+                                    </option>
+                                </select>
+
+                                <input class="MyInput" type="image" th:src="@{/images/commandpic/openLARM.png}" alt="leftArmOpen" >
+                            </form>
+                        </span>
+
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandRARMOPEN}" th:text="${CommandRARMOPEN}">
+                                    </option>
+                                </select>
+
+                                <input class="MyInput" type="image" th:src="@{/images/commandpic/openRARM.png}" alt="rightArmOpen" >
+                            </form>
+                        </span>
+
+                    </span>
+                    <span class="horizontal">
+                        <!--                            7-->
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandREST}" th:text="${CommandREST}">
+                                    </option>
+                                </select>
+
+                                <input class="MyInput" type="image" th:src="@{/images/commandpic/zzzimg.jpeg}" alt="Submit" >
+                            </form>
+                        </span>
+                        <!--                            8-->
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandBACKWARD}" th:text="${CommandBACKWARD}">
+                                    </option>
+                                </select>
+
+                                <input id="buttonBackward" class="MyInput" type="image" th:src="@{/images/commandpic/forward.png}" style="transform: rotate(180deg)" alt="Submit" >
+                            </form>
+                        </span>
+                        <!--                            9-->
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandWAKEUP}" th:text="${CommandWAKEUP}">
+                                    </option>
+                                </select>
+
+                                <input class="MyInput" type="image" th:src="@{/images/commandpic/wake.jpg}" alt="Submit" >
+                            </form>
+                        </span>
+
+                        <span class="vertical">
+                            <img class="MyInput" th:src="@{/images/commandpic/emptyTile.png}" alt="emptySpace">
+                        </span>
+
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandLARMDOWN}" th:text="${CommandLARMDOWN}">
+                                    </option>
+                                </select>
+
+                                <input class="MyInput" type="image" th:src="@{/images/commandpic/lefthanddown.png}" alt="leftArmDown" >
+                            </form>
+                        </span>
+
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandRARMDOWN}" th:text="${CommandRARMDOWN}">
+                                    </option>
+                                </select>
+
+                                <input class="MyInput" type="image" th:src="@{/images/commandpic/righthanddown.png}" alt="rightArmDown" >
+                            </form>
+                        </span>
+
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandLARMCLOSE}" th:text="${CommandLARMCLOSE}">
+                                    </option>
+                                </select>
+
+                                <input class="MyInput" type="image" th:src="@{/images/commandpic/closeLARM.png}" alt="leftArmClose" >
+                            </form>
+                        </span>
+
+                        <span class="vertical">
+                            <form action="#"  th:action="@{/admin/home/executeCommand}" th:object="${session}" method="post">
+                                <select hidden th:field="*{command}">
+                                    <option  th:value="${CommandRARMCLOSE}" th:text="${CommandRARMCLOSE}">
+                                    </option>
+                                </select>
+
+                                <input class="MyInput" type="image" th:src="@{/images/commandpic/closeRARM.jpg}" alt="rightArmUp" >
+                            </form>
+                        </span>
+
+                    </span>
+                </div>
+
+<!--                macro table-->
+                <br>
+                <div style="overflow-x: auto;">
+                    <div><span id="macro-heading">Commands scheduler</span></div>
+                    <p>
+                        <input class="MyButton3" type="button" value="Delete all" onclick="deleteAllRows('tblMacro')">
+                        <input class="MyButton4" type="button" value="Add new" onclick="addNewCommand('tblMacro')">
+                        <input class="MyButtonCheck" type="button" value=&#10003; onclick="executeCommand()">
+                    </p>
+
+                    <div id="macro-header" style="visibility: hidden">
+                        <span id="head-command">Command</span>
+                        <span id="head-delay">Delay [ms]</span>
+                        <span id="head-text">Text [optional]</span>
+                    </div>
+
+                    <table class="macro" >
+                    <tbody id="tblMacro" ><tr class="macroRows" hidden>
+                        <td class="macro-command">
+                            <select class="macroOptions" id="MacroSelectList"><option>nothing</option></select></td>
+                        <td class="macro-delay" contenteditable >1000</td>
+                        <td class="macro-text" contenteditable ></td>
+                        <td class="delCell"><input type="button" value="Delete" onclick="deleteOneRow(this, 'tblMacro')"></td>
+                        <td><input class="copyCell" type="button" value=&#43; onclick="copyRow(this)"></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+
+            <p class="admin-message-text text-center" th:utext="${adminMessage}">Placeholder for admin msg</p>
+        </div>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <span>Recent activity</span>
+            </div>
+            <div class="panel-body">
+
+                <h2>Events and warnings</h2>
+                <div id="table-wrapper">
+                    <div id="table-scroll">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Date and Time</th><th>Type</th>
+                                <th>Message</th><th>Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr th:each="log : ${allLogs}">
+                                <td th:text="${log.dateAndTime}">13/01/2011</td>
+<!--                                <td th:text="${log.ipAndPort}">13/01/2011</td>-->
+                                <td th:text="${log.type}">WARN</td>
+                                <td th:text="${log.message}">Connection timeout</td>
+                                <td th:text="${log.status}">OK</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+

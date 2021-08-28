@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NaoCloud</title>
+    <link rel="shortcut icon" type="image/png" th:href="@{/images/roboto-logo.png}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body background="/images/19.png" style="background-position: center; background-repeat: repeat; background-size: cover;">
+
+<form th:action="@{/registration}" method="get">
+    <button class="btn btn-md btn-warning btn-block" style="font-size: 18px; padding: 10px 0 10px 0" type="Submit">Go To Registration Page</button>
+</form>
+
+<div class="container">
+    <img th:src="@{/images/login.png}" class="img-responsive center-block" width="172" height="295" alt="Logo"  title="Hello, world! I am Nao robot!" />
+    <form th:action="@{/login}" method="POST" class="form-signin">
+        <h3 class="form-signin-heading" th:text="Welcome"></h3>
+        <br/>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" th:placeholder="Email"
+               class="form-control"/> <br/>
+
+        <label for="password">Password</label>
+        <input type="password" th:placeholder="Password"
+               id="password" name="password" class="form-control"/> <br/>
+
+        <div style="text-align: center" th:if="${param.error}">
+            <p style="font-size: 20px; padding-bottom: 30px; color: #FF1C19;">Your email of password is invalid, please verify or try again.</p>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit"
+                th:text="Login"></button>
+    </form>
+</div>
+
+
+
+<footer>
+    <span class="content left">
+        <a style="text-decoration:none" href="https://www.tuke.sk/">
+            <i>TUKE </i>
+        </a>
+
+        <a style="text-decoration:none" href="http://www.fei.tuke.sk/sk">
+            <i>FEI </i>
+        </a>
+
+        <a style="text-decoration:none" href="http://kemt.fei.tuke.sk/">
+            <i>KEMT </i>
+        </a>
+    </span>
+
+    <span class="content right">Copyright &copy; 2018 - 2021</span>
+</footer>
+</body>
+</html>

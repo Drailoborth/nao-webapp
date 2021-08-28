@@ -1,0 +1,45 @@
+{
+  "AWSEBDockerrunVersion": "2",
+  "volumes": [
+    {
+      "name": "app",
+      "host": {
+        "sourcePath": "/var/app/current/app"
+      }
+    }
+  ],
+  "containerDefinitions": [
+    {
+      "name": "app-container",
+      "image": "openjdk:8-jre-alpine",
+      "essential": true,
+      "memory": 512,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 8080
+        },
+        {
+          "hostPort": 8081,
+          "containerPort": 65432
+        }
+      ],
+      "mountPoints": [
+        {
+          "sourceVolume": "app",
+          "containerPath": "/var/app"
+        },
+        {
+          "sourceVolume": "awseb-logs-app-container",
+          "containerPath": "/var/log/app"
+        }
+      ],
+      "entryPoint": [
+        "/usr/bin/java",
+
+        "-jar",
+        "/var/app/login-0.0.1-SNAPSHOT.jar"
+      ]
+    }
+  ]
+}

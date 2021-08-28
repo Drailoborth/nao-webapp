@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="server:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="88fed3cd-3026-4008-9d1f-7a68541906b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../nao-webapp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/server_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_27_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_27_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_27_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_27_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_27_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_27_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_27_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_27_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_27_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_27_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_27_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_ipc_reactor_netty_0_7_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_11_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/server_component_0_5_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/KlientPreNAOrobota/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/../client/KlientPreNAOrobota/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/../client/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gpch/login/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gpch/login/configuration/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gpch/login/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gpch/login/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gpch/login/controller/NaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gpch/login/controller/NaoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gpch/login/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gpch/login/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gpch/login/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gpch/login/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gpch/naocontrol/Instance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gpch/naocontrol/Instance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/access-denied.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/access-denied.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/homeCustomEdit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/homeCustomEdit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/registration.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/crouch.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/crouch.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/lefthanddown.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/lefthanddown.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/lefthandup.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/lefthandup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/righthanddown.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/righthanddown.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/righthandup.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/righthandup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/sitDown.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/sitDown.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/standUp.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/commandpic/standUp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/pdf_docs/Prirucka_NAO.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/pdf_docs/Prirucka_NAO.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/homeExtended.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/homeExtended.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/homeSpeechRecognition.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/homeSpeechRecognition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gpch/login/controller/NaoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gpch/login/controller/NaoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gpch/naocontrol/Instance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gpch/naocontrol/Instance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/homeCustomEdit.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/homeCustomEdit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/commandpic/crouch.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/images/commandpic/crouch.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/pdf_docs/Prirucka_NAO.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/images/pdf_docs/Prirucka_NAO.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/homeExtended.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/homeExtended.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/homeSpeechRecognition.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/homeSpeechRecognition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../prirucky/Príloha B.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../prirucky/Príloha C.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../prirucky/Príloha D.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/LoginApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/configuration/SecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/configuration/WebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/configuration/WsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/controller/ChatController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/controller/NaoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/model/ChatMessage$ChatMessageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/model/ChatMessage$MessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/model/ChatMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/model/Log$LogBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/model/Log.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/model/Role$RoleBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/model/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/model/Session$SessionBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/model/Session.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/model/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/repository/LogRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/repository/MessageRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/repository/RoleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/service/LogHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/service/LogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/service/MessageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/login/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/naocontrol/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/naocontrol/Controlable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/naocontrol/Instance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/naocontrol/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/com/gpch/naocontrol/threadworkers/RequestHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/css/about.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/css/access-denied.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/css/chat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/css/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/css/homeCustomEdit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/css/registration.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/bat/bat100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/bat/bat25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/bat/bat50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/bat/bat75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/battery1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/closeLARM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/closeRARM.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/emptyTile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/forward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/handup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/lefthanddown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/lefthandup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/mic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/openLARM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/openRARM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/righthanddown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/righthandup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/sitDown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/standUp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/turnleft.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/turnright.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/wake.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/commandpic/zzzimg.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/pdf_docs/Prirucka_NAO.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/images/roboto-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/js/about.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/js/homeExtended.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/js/homeSpeechRecognition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/static/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/templates/access-denied.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/templates/admin/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/templates/admin/chat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/templates/admin/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/classes/templates/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency-maven-plugin-markers/com.gpch-server-component-jar-0.5.1-SNAPSHOT.marker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/LoginApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/configuration/SecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/configuration/WebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/configuration/WsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/controller/ChatController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/controller/NaoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/model/ChatMessage$ChatMessageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/model/ChatMessage$MessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/model/ChatMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/model/Log$LogBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/model/Log.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/model/Role$RoleBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/model/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/model/Session$SessionBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/model/Session.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/model/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/repository/LogRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/repository/MessageRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/repository/RoleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/service/LogHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/service/LogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/service/MessageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/login/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/naocontrol/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/naocontrol/Controlable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/naocontrol/Instance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/naocontrol/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/com/gpch/naocontrol/threadworkers/RequestHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/css/about.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/css/access-denied.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/css/chat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/css/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/css/homeCustomEdit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/css/registration.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/bat/bat100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/bat/bat25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/bat/bat50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/bat/bat75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/battery1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/closeLARM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/closeRARM.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/emptyTile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/forward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/handup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/lefthanddown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/lefthandup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/mic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/openLARM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/openRARM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/righthanddown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/righthandup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/sitDown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/standUp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/turnleft.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/turnright.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/wake.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/commandpic/zzzimg.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/pdf_docs/Prirucka_NAO.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/images/roboto-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/js/about.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/js/homeExtended.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/js/homeSpeechRecognition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/static/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/templates/access-denied.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/templates/admin/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/templates/admin/chat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/templates/admin/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/classes/templates/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/HikariCP-2.7.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/aspectjweaver-1.8.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/attoparser-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/freemarker-2.3.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/hibernate-core-5.2.17.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/hibernate-jpa-2.1-api-1.0.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/hibernate-validator-6.0.11.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/jackson-core-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/jackson-databind-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/jackson-datatype-jdk8-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/jackson-datatype-jsr310-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/jackson-module-parameter-names-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/jandex-2.0.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/javassist-3.22.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/javax.transaction-api-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/jul-to-slf4j-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/log4j-api-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/log4j-to-slf4j-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/lombok-1.16.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/mysql-connector-java-5.1.46.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/netty-buffer-4.1.27.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/netty-codec-4.1.27.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/netty-codec-http-4.1.27.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/netty-codec-socks-4.1.27.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/netty-common-4.1.27.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/netty-handler-4.1.27.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/netty-handler-proxy-4.1.27.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/netty-resolver-4.1.27.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/netty-transport-4.1.27.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/netty-transport-native-epoll-4.1.27.Final-linux-x86_64.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/netty-transport-native-unix-common-4.1.27.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/reactive-streams-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/reactor-core-3.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/reactor-netty-0.7.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/snakeyaml-1.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-aop-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-aspects-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-beans-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-autoconfigure-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-starter-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-starter-aop-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-starter-data-jpa-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-starter-freemarker-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-starter-jdbc-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-starter-json-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-starter-logging-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-starter-reactor-netty-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-starter-security-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-starter-thymeleaf-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-starter-tomcat-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-starter-web-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-boot-starter-websocket-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-context-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-context-support-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-core-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-data-commons-2.0.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-data-jpa-2.0.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-expression-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-jcl-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-jdbc-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-messaging-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-orm-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-security-config-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-security-core-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-security-web-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-tx-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-web-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-webmvc-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/spring-websocket-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/thymeleaf-3.0.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/thymeleaf-extras-java8time-3.0.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/thymeleaf-spring5-3.0.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/tomcat-embed-core-8.5.32.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/tomcat-embed-el-8.5.32.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/tomcat-embed-websocket-8.5.32.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/unbescape-1.1.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/BOOT-INF/lib/validation-api-2.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/META-INF/maven/com.gpch/server-component/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/META-INF/maven/com.gpch/server-component/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/ExecutableArchiveLauncher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/JarLauncher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/LaunchedURLClassLoader$UseFastConnectionExceptionsEnumeration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/LaunchedURLClassLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/Launcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/MainMethodRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/PropertiesLauncher$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/PropertiesLauncher$ArchiveEntryFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/PropertiesLauncher$PrefixMatchingArchiveFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/PropertiesLauncher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/WarLauncher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/archive/Archive$Entry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/archive/Archive$EntryFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/archive/Archive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/archive/ExplodedArchive$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/archive/ExplodedArchive$FileEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/archive/ExplodedArchive$FileEntryIterator$EntryComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/archive/ExplodedArchive$FileEntryIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/archive/ExplodedArchive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/archive/JarFileArchive$EntryIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/archive/JarFileArchive$JarFileEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/archive/JarFileArchive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/data/RandomAccessData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/data/RandomAccessDataFile$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/data/RandomAccessDataFile$DataInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/data/RandomAccessDataFile$FileAccess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/data/RandomAccessDataFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/AsciiBytes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/Bytes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/CentralDirectoryEndRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/CentralDirectoryFileHeader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/CentralDirectoryParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/CentralDirectoryVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/FileHeader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/Handler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/JarEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/JarEntryFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/JarFile$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/JarFile$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/JarFile$JarFileType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/JarFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/JarFileEntries$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/JarFileEntries$EntryIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/JarFileEntries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/JarURLConnection$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/JarURLConnection$JarEntryName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/JarURLConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/StringSequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/jar/ZipInflaterInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/dependency/org/springframework/boot/loader/util/SystemPropertyUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/server-component-0.5.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target/server-component-0.5.1-SNAPSHOT.jar.original" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="login@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="login@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="login@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="server" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1tRpadwiyiIuBno9tovb4fSGSt7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.21494253" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="LoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gpch.login.LoginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88fed3cd-3026-4008-9d1f-7a68541906b1" name="Default Changelist" comment="" />
+      <created>1622741820431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622741820431</updated>
+      <workItem from="1622741824881" duration="204000" />
+      <workItem from="1622742051547" duration="29000" />
+      <workItem from="1622742196841" duration="2811000" />
+      <workItem from="1622745048313" duration="1651000" />
+      <workItem from="1622747091024" duration="1160000" />
+      <workItem from="1622752050991" duration="575000" />
+      <workItem from="1622752909340" duration="69000" />
+      <workItem from="1622753012165" duration="3234000" />
+      <workItem from="1622757813112" duration="289000" />
+      <workItem from="1622792911270" duration="875000" />
+      <workItem from="1622795827385" duration="2533000" />
+      <workItem from="1622973708507" duration="2298000" />
+      <workItem from="1623266819545" duration="102000" />
+      <workItem from="1624211553621" duration="3459000" />
+      <workItem from="1624610464991" duration="2031000" />
+      <workItem from="1624613189571" duration="229000" />
+      <workItem from="1624613549356" duration="1184000" />
+      <workItem from="1624615369332" duration="665000" />
+      <workItem from="1624616743754" duration="2676000" />
+      <workItem from="1624975917822" duration="1979000" />
+      <workItem from="1624993811072" duration="754000" />
+      <workItem from="1624994926488" duration="346000" />
+      <workItem from="1624995303474" duration="134000" />
+      <workItem from="1624995494125" duration="5290000" />
+      <workItem from="1625003651477" duration="1057000" />
+      <workItem from="1625032764032" duration="8440000" />
+      <workItem from="1625064084456" duration="19984000" />
+      <workItem from="1625124756630" duration="5561000" />
+      <workItem from="1625135678403" duration="3326000" />
+      <workItem from="1625151516913" duration="18939000" />
+      <workItem from="1625212241093" duration="46681000" />
+      <workItem from="1625335621362" duration="12849000" />
+      <workItem from="1625380719264" duration="32792000" />
+      <workItem from="1625583751047" duration="206000" />
+      <workItem from="1625584246862" duration="14972000" />
+      <workItem from="1625840690391" duration="2668000" />
+      <workItem from="1625901926472" duration="7964000" />
+      <workItem from="1626156695014" duration="3656000" />
+      <workItem from="1626434961293" duration="11188000" />
+      <workItem from="1627313429286" duration="3661000" />
+      <workItem from="1627370831735" duration="27065000" />
+      <workItem from="1627486037939" duration="418000" />
+      <workItem from="1627498004103" duration="674000" />
+      <workItem from="1627669031173" duration="570000" />
+      <workItem from="1627991297925" duration="1977000" />
+      <workItem from="1628163524717" duration="1981000" />
+      <workItem from="1628173842320" duration="4319000" />
+      <workItem from="1628183880307" duration="7555000" />
+      <workItem from="1628257278648" duration="1606000" />
+      <workItem from="1628272096048" duration="2224000" />
+      <workItem from="1628507234290" duration="1503000" />
+      <workItem from="1628789595569" duration="2864000" />
+      <workItem from="1628849716445" duration="282000" />
+      <workItem from="1629039571716" duration="905000" />
+      <workItem from="1629295206870" duration="5927000" />
+      <workItem from="1629308921927" duration="14114000" />
+      <workItem from="1629371536893" duration="2231000" />
+      <workItem from="1629394792717" duration="3061000" />
+      <workItem from="1629405676950" duration="6000000" />
+      <workItem from="1629442954133" duration="22872000" />
+      <workItem from="1629470059345" duration="3947000" />
+      <workItem from="1629481877642" duration="2302000" />
+      <workItem from="1629491177500" duration="8364000" />
+      <workItem from="1629666826930" duration="8601000" />
+      <workItem from="1629730254144" duration="3107000" />
+      <workItem from="1629738422550" duration="6851000" />
+      <workItem from="1629747847013" duration="2228000" />
+      <workItem from="1630075506166" duration="3153000" />
+      <workItem from="1630101663286" duration="619000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="179" key="#Assign_Data_Sources" timestamp="1622744852564">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1622744852564" />
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622744301017">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1622744301017" />
+    <state x="590" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1625217422305">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="590" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1625217422305" />
+    <state x="690" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1629742732626">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1629742732626" />
+    <state x="690" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1627320353995" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1625041751169">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1920.1040@0.0.1920.1040" timestamp="1625041751169" />
+    <state x="1029" y="173" key="FileChooserDialogImpl" timestamp="1629742747509">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1029" y="173" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1629742747509" />
+    <state x="1029" y="173" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1627322111395" />
+    <state width="1877" height="182" key="GridCell.Tab.0.bottom" timestamp="1630102579353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630102579353" />
+    <state width="1877" height="169" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1629444242361" />
+    <state width="1877" height="182" key="GridCell.Tab.0.center" timestamp="1630102579352">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630102579352" />
+    <state width="1877" height="169" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1629444242360" />
+    <state width="1877" height="182" key="GridCell.Tab.0.left" timestamp="1630102579352">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630102579352" />
+    <state width="1877" height="169" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1629444242360" />
+    <state width="1877" height="182" key="GridCell.Tab.0.right" timestamp="1630102579353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630102579353" />
+    <state width="1877" height="169" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1629444242360" />
+    <state width="1877" height="182" key="GridCell.Tab.1.bottom" timestamp="1630102579354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630102579354" />
+    <state width="1877" height="169" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1629444242361" />
+    <state width="1877" height="182" key="GridCell.Tab.1.center" timestamp="1630102579354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630102579354" />
+    <state width="1877" height="169" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1629444242361" />
+    <state width="1877" height="182" key="GridCell.Tab.1.left" timestamp="1630102579354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630102579354" />
+    <state width="1877" height="169" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1629444242361" />
+    <state width="1877" height="182" key="GridCell.Tab.1.right" timestamp="1630102579354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630102579354" />
+    <state width="1877" height="169" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1629444242361" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1629675452227">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1629675452227" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1629675452226">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1629675452226" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1629675452226">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1629675452226" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1629675452227">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1629675452227" />
+    <state x="703" y="152" width="1040" height="838" key="SettingsEditor" timestamp="1629742790249">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="703" y="152" width="1040" height="838" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1629742790249" />
+    <state x="53" y="102" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1627321867674" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1630140488448">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630140488448" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1629442952951" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1627391287455">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1627391287455" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1622744118765">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1622744118765" />
+    <state x="869" y="147" width="879" height="804" key="find.popup" timestamp="1630098671015">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="869" y="147" width="879" height="804" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630098671015" />
+    <state x="944" y="94" width="879" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1629443919771" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1625263867407">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1625263867407" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1627314123120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1627314123120" />
+  </component>
+</project>

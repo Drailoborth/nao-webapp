@@ -1,0 +1,249 @@
+
+.connections table,
+.connections td {
+    font-family: Verdana, serif;
+}
+
+#recButton{
+    cursor: pointer;
+    vertical-align: middle;
+
+}
+
+.macro table,
+.macro td {
+    border: 1px solid dodgerblue;
+    border-collapse: collapse;
+    font-family: Verdana, serif;
+}
+
+.macro td + td + td + td{
+    border:none;
+}
+
+.connections td {
+    cursor: text;
+    padding: 2px;
+}
+.connections td:empty:after {
+    content: "Type here...";
+    color: #CCCCCC;
+}
+.connections td:first-child input{
+    width: 200px;
+}
+td.delCell {
+    color: red;
+    border-top-left-radius: 10px;
+}
+td.connCell{
+    color: green;
+    border-radius: 10px;
+}
+.connections td.delCell > input{
+    border-radius: 10px;
+}
+
+.connections td.connCell > input{
+    border-radius: 10px;
+}
+
+.MyButton {
+     background-color: #337ab7;
+     border-color: #2e6da4;
+     color: white;
+     border-radius: 10px;
+ }
+
+.MyButton2 {
+    border-color: darkred;
+    color: white;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.MyButton3 {
+    border-radius: 10px;
+    border-color: red;
+}
+
+.MyButton4 {
+    border-radius: 10px;
+    border-color: dodgerblue;
+}
+
+.MyButtonCheck{
+    border-radius: 10px;
+    border-color: green;
+    color: green;
+    font-weight: bold;
+}
+
+.showKeys {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color: white;
+    border-radius: 10px;
+}
+
+.hideKeys {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color: white;
+    border-radius: 10px;
+}
+
+.copyCell{
+    color: green;
+    font-size: 100%;
+
+}
+
+#myInput1 {
+    border-radius: 10px;
+    width: 25%;
+    margin-top: 5px;
+}
+
+#myInput2 {
+    border-radius: 10px;
+    display:table-cell;
+    width: 70%;
+}
+
+.MyGrid {
+    display: table;
+    border-spacing: 5px
+}
+
+.MyInput {
+    width: 50px;
+    height: 50px;
+}
+
+select.blue-color {
+    color: #ffffff;
+    background-color: #337ab7;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+span.IpAndPortHighlight {
+    color: purple;
+    font-weight: bold;
+}
+
+.delAndIPInfo span{
+    vertical-align: middle;
+    display: inline-block;
+}
+.delAndIPInfo .IPInfo{
+    vertical-align: middle;
+    display: inline-block;
+    float:right;
+    margin-right:40px;
+}
+
+#clearListButton{
+    margin-top: 8px;
+}
+
+#macro-heading{
+    color: black;
+    font-size: 14px;
+    font-family: Verdana;
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+.MyGrid span {
+    display: inline-block;
+}
+span.horizontal {
+    text-align: left;
+    width: 100%;
+}
+span.vertical {
+    vertical-align: middle;
+    line-height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+span.vertical img {
+    height: 50px;
+    width: 50px;
+}
+span.vertical input {
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
+}
+
+span.vertical input:hover {
+    vertical-align: middle;
+    height: 51px;
+    width: 51px;
+}
+
+/*macro head*/
+#macro-header span{
+    display: inline-block;
+}
+
+#macro-header{
+    white-space: nowrap;
+}
+
+span#head-command{
+    width: 140px;
+    text-align: center;
+    white-space: nowrap;
+}
+span#head-delay{
+    width: 80px;
+    text-align: center;
+    white-space: nowrap;
+}
+span#head-text{
+    width: 140px;
+    min-width: 70px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.macro-command{
+    min-width: 140px;
+    max-width: 140px;
+    text-align: center;
+    background-color:white;
+    vertical-align: center;
+}
+
+.macro-delay{
+    min-width: 86px;
+    max-width: 86px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color:white;
+}
+
+.macro-text{
+    min-width: 144px;
+    max-width: 144px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color:white;
+}
+
+#MacroSelectList{
+    width: 136px;
+    text-align: center;
+}
+

@@ -1,0 +1,1 @@
+Do programu Choregraphe importujeme pomocou suboru BetaTest.pml
